@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Sazsu's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  <span id="greeting"></span>
+  <!-- typing script-->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    const typed = new Typed('#greeting', {
+        strings: ['Hi, I\'m Sazsu'],
+        typeSpeed: 50,
+    });
+  </script>
+  <p></p>
+  <div class="services">
+    <a id="twitter" href="https://twitter.com" target="_blank"><img src="icons/twitter.svg" alt="My Twitter"></a>
+    <a id="mail" href="mailto:shonniy@yandex.ru"><img src="icons/mail.svg" alt="My Mail"></a>
+    <a id="github" href="https://github.com/sazsu" target="_blank"><img src="icons/github.svg" alt="My Github"></a>
+  </div>
 </body>
 </html>

@@ -1,17 +1,24 @@
 /*@import url(//fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900);*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+.container {
+    display: flex;
+    column-gap: 5%;
+}
+
+#profile-picture {
+    float: left;
+    margin-left: 15%;
+    margin-top: 15%;
+    width: 15%;
+    height: 15%;
+}
+
 #greeting {
+    margin-top: 15%;
     font-family: 'Montserrat', serif;
     font-weight: 800;
     font-size: 3rem;
     color: #163541;
-}
-
-#profile-picture {
-    display: block;
-    margin-left: 5%;
-    margin-top: 15%;
-    width: 15%;
-    height: 15%
 }
 

@@ -6,21 +6,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="https://avatars.githubusercontent.com/sazsu" id="profile-picture" alt="profile picture">
-  <span id="greeting"></span>
-  <!-- typing script-->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    const typed = new Typed('#greeting', {
-        strings: ['Hi, I\'m Sazsu!'],
-        typeSpeed: 60,
-    });
-  </script>
+  <div class="container">
+    <img src="https://avatars.githubusercontent.com/sazsu" id="profile-picture" alt="profile picture">
+    <span id="greeting"></span>
+    <!-- typing script-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('#greeting', {
+            strings: ['Hi, I\'m Sazsu!'],
+            typeSpeed: 60,
+            showCursor: false,
+        });
+    </script>
+  </div>
   <p></p>
   <div class="services">
-    <a id="twitter" href="https://twitter.com" target="_blank"><img src="icons/twitter.svg" alt="My Twitter"></a>
-    <a id="mail" href="mailto:shonniy@yandex.ru"><img src="icons/mail.svg" alt="My Mail"></a>
-    <a id="github" href="https://github.com/sazsu" target="_blank"><img src="icons/github.svg" alt="My Github"></a>
+    <a id="twitter" href="https://twitter.com" target="_blank"><img src="icons/twitter.svg" alt="twitter"></a>
+    <a id="mail" href="mailto:shonniy@yandex.ru"><img src="icons/mail.svg" alt="mail"></a>
+    <a id="github" href="https://github.com/sazsu" target="_blank"><img src="icons/github.svg" alt="github"></a>
   </div>
 </body>
 </html>

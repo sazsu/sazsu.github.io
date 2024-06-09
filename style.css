@@ -3,7 +3,6 @@
 
 .container {
     display: flex;
-    column-gap: 5%;
 }
 
 #profile-picture {
@@ -14,11 +13,18 @@
     height: 15%;
 }
 
-#greeting {
-    margin-top: 15%;
+.greeting {
+    margin-top: 12%;
     font-family: 'Montserrat', serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #163541;
+    white-space: break-spaces;
+
 }
 
+.greeting strong {
+    background-image: linear-gradient(to right, #6161b3, #8989ee, #29c8e8);
+    background-clip: text;
+    color: transparent;
+}

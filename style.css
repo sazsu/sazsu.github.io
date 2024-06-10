@@ -1,5 +1,4 @@
-/*@import url(//fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900);*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .container {
     display: flex;
@@ -11,20 +10,45 @@
     margin-top: 15%;
     width: 15%;
     height: 15%;
+    border-radius: 5%;
 }
 
 .greeting {
-    margin-top: 12%;
-    font-family: 'Montserrat', serif;
-    font-weight: 800;
-    font-size: 3.5rem;
+    /*min-height: 100vh;*/
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    font-family: 'Inter', 'Montserrat', serif;
+    font-weight: 900;
+    letter-spacing: -2px;
     color: #163541;
-    white-space: break-spaces;
-
+    padding: 15% 15% 0;
 }
 
-.greeting strong {
-    background-image: linear-gradient(to right, #6161b3, #8989ee, #29c8e8);
+.greeting-content {
+    max-width: 800px;
+    line-height: 1;
+}
+
+.greeting-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    white-space: pre;
+}
+
+#waving-hand {
+    height: 25px
+}
+
+.greeting-content h1 {
+    font-size: 82px;
+    margin-top: 0;
+}
+
+#greeting-text {color: #0ea5e9}
+
+#name {
+    background-image: linear-gradient(to right, #06b6d4, #3b82f6);
     background-clip: text;
     color: transparent;
 }

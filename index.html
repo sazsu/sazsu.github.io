@@ -26,19 +26,29 @@
 
 <section class="greeting">
   <div class="greeting-content">
-    <h3><span id="greeting-text"></span><img id="waving-hand" src="icons/waving-hand.png" alt="greetings"></h3>
+    <h3 id="greeting-text"></h3>
 
     <script>
       const greetings = [
           'Hey', 'Hi', 'Hello', 'Howdy', 'Salute', 'Sup', 'Yo'
       ];
       const displayRandomGreeting = () => {
-          document.getElementById('greeting-text').innerHTML = greetings[Math.floor(Math.random() * greetings.length)] + '  ';
+          document.getElementById('greeting-text').innerHTML = greetings[Math.floor(Math.random() * greetings.length)] + '!';
       }
       window.onload = displayRandomGreeting();
     </script>
+
     <h1>I'm <span id="name">Sazsu</span>,<br>a Software dev.</h1>
+
   </div>
+<!--  <div class="profile-picture">-->
+<!--    <img src="https://avatars.githubusercontent.com/sazsu" alt="github profile picture">-->
+<!--  </div>-->
 </section>
+<div class="services">
+  <a href="https://github.com/sazsu" target="_blank"><img src="icons/github.svg" alt="github"></a>
+  <a href="https://twitter.com/" target="_blank"><img src="icons/twitter.svg" alt="twitter"></a>
+  <a href="mailto:fake@fake.com"><img src="icons/mail.svg" alt="mail"></a>
+</div>
 </body>
 </html>

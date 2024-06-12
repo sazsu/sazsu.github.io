@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.container {
-    display: flex;
-}
-
-#profile-picture {
-    float: left;
-    margin-left: 15%;
-    margin-top: 15%;
-    width: 15%;
-    height: 15%;
-    border-radius: 5%;
+.profile-picture img {
+    width: 350px
 }
 
 .greeting {
@@ -23,6 +14,7 @@
     letter-spacing: -2px;
     color: #163541;
     padding: 15% 15% 0;
+
 }
 
 .greeting-content {
@@ -32,7 +24,7 @@
 
 .greeting-content h3 {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     white-space: pre;
 }
 
@@ -42,7 +34,7 @@
 
 .greeting-content h1 {
     font-size: 82px;
-    margin-top: 0;
+    margin: 0 0 16px 0;
 }
 
 #greeting-text {color: #0ea5e9}
@@ -51,4 +43,18 @@
     background-image: linear-gradient(to right, #06b6d4, #3b82f6);
     background-clip: text;
     color: transparent;
+}
+
+.services {
+    display: flex;
+    padding-left: 15%;
+}
+
+.services img {
+    width: 28px;
+    margin-right: 32px;
+}
+
+.services img:hover {
+    stroke: #49586e;
 }

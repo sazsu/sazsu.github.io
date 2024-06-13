@@ -2,49 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script type="module">
+    import { displayRandomGreeting } from "./scripts/randomGreeting.js";
+    import { fetchCommits } from "./scripts/commitCount.js";
+
+    window.onload = () => {
+      displayRandomGreeting();
+      fetchCommits();
+    };
+  </script>
   <link rel="icon" href="icons/technologist.png">
   <title>Sazsu's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!--<div class="container">-->
-<!--  <img src="https://avatars.githubusercontent.com/sazsu" id="profile-picture" alt="profile picture">-->
-
-<!--  <div class="greeting">-->
-<!--    Hi! I'm <strong>Sazsu</strong>,-->
-<!--    a developer.-->
-<!--  </div>-->
-
-<!--</div>-->
-
-<!--<section class="services">-->
-<!--  <a id="twitter" href="https://twitter.com" target="_blank"><img src="icons/twitter.svg" alt="twitter"></a>-->
-<!--  <a id="mail" href="mailto:shonniy@yandex.ru"><img src="icons/mail.svg" alt="mail"></a>-->
-<!--  <a id="github" href="https://github.com/sazsu" target="_blank"><img src="icons/github.svg" alt="github"></a>-->
-<!--</section>-->
-
 <section class="greeting">
   <div class="greeting-content">
     <h3 id="greeting-text"></h3>
-
-    <script>
-      const greetings = [
-          'Hey', 'Hi', 'Hello', 'Howdy', 'Salute', 'Sup', 'Yo'
-      ];
-      const displayRandomGreeting = () => {
-          document.getElementById('greeting-text').innerHTML = greetings[Math.floor(Math.random() * greetings.length)] + '!';
-      }
-      window.onload = displayRandomGreeting();
-    </script>
-
     <h1>I'm <span id="name">Sazsu</span>,<br>a Software dev.</h1>
-
+    <h3 id="about">I am just starting my journey in Software Development.
+      Total commits so far: <span id="commits"></span></h3>
   </div>
-<!--  <div class="profile-picture">-->
-<!--    <img src="https://avatars.githubusercontent.com/sazsu" alt="github profile picture">-->
-<!--  </div>-->
 </section>
+
 <div class="services">
   <a href="https://github.com/sazsu" target="_blank"><img src="icons/github.svg" alt="github"></a>
   <a href="https://twitter.com/" target="_blank"><img src="icons/twitter.svg" alt="twitter"></a>
